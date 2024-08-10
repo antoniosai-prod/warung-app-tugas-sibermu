@@ -11,6 +11,7 @@ CREATE TABLE `mtd_distributor` (
 CREATE TABLE `mtd_barang` (
     `id_barang` INT AUTO_INCREMENT PRIMARY KEY,
     `id_distributor` INT NOT NULL,
+    `barcode` VARCHAR(255) NOT NULL,
     `nama_barang` VARCHAR(255) NOT NULL,
     `stok_sisa` INT NOT NULL DEFAULT 0,
     `harga_beli` INT NOT NULL DEFAULT 0,

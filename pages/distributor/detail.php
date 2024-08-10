@@ -1,0 +1,1 @@
+show single data of distributor

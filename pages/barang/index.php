@@ -35,7 +35,7 @@ $listBarang = $database->query($query)->all();
         <p class="mt-0">Menampilkan <?= count($listBarang) ?> data</p>
     </div>
     <div>
-        <a href="#" class="btn btn-outline-success">Add new Item</a>
+      <button data-bs-toggle="modal" data-bs-target="#addBarang" class="btn btn-outline-success">Add new Item</button>
     </div>
   </div>
   <hr>
@@ -71,3 +71,4 @@ $listBarang = $database->query($query)->all();
     </tbody>
   </table>
 </div>
+<?php include("pages/barang/add.php") ?>
